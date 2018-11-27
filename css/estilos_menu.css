@@ -1,0 +1,53 @@
+/*SUBMENU MATERIAL MULTIMEDIA*/
+.submenu {
+	position: absolute;
+	background: #DF7401;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	left: 7PX;
+	padding: 10PX;
+	
+
+}
+
+.submenu li a{
+	display: block;
+	padding: 15PX;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*SUBMENU MATERIAL LECTURA*/
+.submenu1{
+	position: absolute;
+	background:  #DF7401;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	left: 7PX;
+	padding: 10PX;
+}
+
+.submenu1 li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu1{
+	visibility: visible;
+	opacity: 1;
+}
+
+

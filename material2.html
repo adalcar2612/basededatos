@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="datos,base de datos,,diseño">
+  <meta name="author" content="Adalberto Cárcamo">
+  <meta name="description" content="Modelado de bases de datos">
+  <title>modelado de bases de datos</title>
+	<link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos_menu.css">
+  
+    </head>
+<body>
+  <div class="contenedor">
+
+
+      	<div class="header" >
+      		<img src="img/logo1.jpg" alt="">
+           
+      	</div>
+      	<div class="nav">
+      		
+          		<ul class="menu">     		
+                  <li  class ="uno"><a href="index.html" >INICIO</a></li>	      
+            			<li  class ="dos"><a href="introduccion.html" >INTRODUCCIÓN AL CURSO</a></li>
+            			<li class="tres"><a href="#" >MATERIAL MULTIMEDIA</a>
+          					     <ul class="submenu">
+                						<li ><a href="videoconceptos.html" >Conceptos Básicos</a></li>
+                						<li><a href="videomodelo.html">Modelo de Datos</a></li>
+                						
+                         </ul>
+            			</li>
+            			<li class="cuatro"><a href="#">MATERIAL DE LECTURA</a>
+                        <ul class="submenu1">
+                            <li ><a href="material1.html" >REQUERIMIENTOS</a></li>
+                            <li><a href="material2.html">METODOLOGÍA</a></li>
+                            
+                         </ul>
+
+                  </li>
+                  <li  class ="cinco"><a href="autor.html" >AUTOR</a></li> 
+          		</ul>
+      		
+      	</div>
+    
+
+      	<div   class="seccion" >
+                  
+              	<p>Metodología de diseño de bases de datos</p>
+<br>
+<p>El diseño de una base de datos es un proceso complejo que abarca decisiones a muy distintos niveles. La complejidad se controla mejor si se descompone el problema en subproblemas y se resuelve cada uno de estos subproblemas independientemente, utilizando técnicas específicas.</p><br>
+
+<p>Así, el diseño de una base de datos se descompone en diseño conceptual, diseño lógico y diseño físico.</p><br>
+
+<p>El diseño conceptual parte de las especificaciones de requisitos de usuario y su resultado es el esquema conceptual de la base de datos. Un esquema conceptual es una descripción de alto nivel de la estructura de la base de datos, independientemente del DBMS que se vaya a utilizar para manipularla. Un modelo conceptual es un lenguaje que se utiliza para describir esquemas conceptuales. El objetivo del diseño conceptual es describir los datos de la base de datos y no las estructuras de almacenamiento que se necesitarán para manejar estos datos.</p><br>
+
+<p>El diseño lógico parte del esquema conceptual y da como resultado un esquema lógico. Un esquema lógico es una descripción de la estructura de la base de datos en términos de las estructuras de datos que puede procesar un tipo de DBMS. Un modelo lógico es un lenguaje usado para especificar esquemas lógicos (modelo relacional, modelo de red, etc.). El diseño lógico depende del tipo de DBMS que se vaya a utilizar, no depende del producto concreto.</p><br>
+
+<p>El diseño físico parte del esquema lógico y da como resultado un esquema físico. Un esquema físico es una descripción de la implementación de una base de datos en memoria secundaria: las estructuras de almacenamiento y los métodos utilizados para tener un acceso eficiente a los datos. Por ello, el diseño físico depende del DBMS</p>
+ <br>
+<p>Modelos de datos</p><br>
+
+<p>Un modelo de datos es entonces una serie de conceptos que puede utilizarse para describir un conjunto de datos y las operaciones para manipularlos. Hay dos tipos de modelos de datos: los modelos conceptuales y los modelos lógicos. Los modelos conceptuales se utilizan para representar la realidad a un alto nivel de abstracción.</p><br>
+
+<p>Mediante los modelos conceptuales se puede construir una descripción de la realidad fácil de entender. En los modelos lógicos, las descripciones de los datos tienen una correspondencia sencilla con la estructura física de la base de datos.</p><br>
+
+<p>En el diseño de bases de datos se usan primero los modelos conceptuales para lograr una descripción de alto nivel de la realidad, y luego se transforma el esquema conceptual en un esquema lógico. El motivo de realizar estas dos etapas es la dificultad de abstraer la estructura de una base de datos que presente cierta complejidad. Un esquema es un conjunto de representaciones lingüísticas o gráficas que describen la estructura de los datos de interés.
+</p><br><p>
+Los modelos conceptuales deben ser buenas herramientas para representar la realidad, por lo que deben poseer las siguientes cualidades:
+
+</p><br><p>
+• Expresividad: deben tener suficientes conceptos para expresar perfectamente la realidad.
+</p><br><p>
+• Simplicidad: deben ser simples para que los esquemas sean fáciles de entender.
+</p><br><p>
+• Minimalidad: cada concepto debe tener un significado distinto.
+</p><br><p>
+• Formalidad: todos los conceptos deben tener una interpretación única, precisa y bien definida.
+</p><br><p>
+En general, un modelo no es capaz de expresar todas las propiedades de una realidad determinada, por lo que hay que añadir aserciones que complementen el esquema.
+</p><br><p>
+Algunos modelos con frecuencia utilizados en las bases de datos son:
+</p><br><p>
+Bases de datos jerárquicas
+</p><br><p>
+Éstas son bases de datos que, como su nombre indica, almacenan sus datos en una estructura jerárquica. En este modelo los datos se organizan en una forma similar a un árbol (visto al revés), en donde un nodo padre de datos puede tener varios hijos. El nodo que no tiene padres es llamado raíz, y a los nodos que no tienen hijos se los conoce como hojas.
+</p><br><p>
+Las bases de datos jerárquicas son especialmente útiles en el caso de aplicaciones que manejan un gran volumen de datos y datos muy compartidos permitiendo crear estructuras estables y de gran rendimiento.
+
+</p><br><p>
+Una de las principales limitaciones de este modelo es su incapacidad de representar eficientemente la redundancia de datos.
+</p><br><p>
+Base de datos de red
+</p><br><p>
+Éste es un modelo ligeramente distinto del jerárquico; su diferencia fundamental es la modificación del concepto de nodo: se permite que un mismo nodo tenga varios padres (posibilidad no permitida en el modelo jerárquico).
+</p><br><p>
+Fue una gran mejora con respecto al modelo jerárquico, ya que ofrecía una solución eficiente al problema de redundancia de datos; pero, aun así, la dificultad que significa administrar los datos en una base de datos de red ha significado que sea un modelo utilizado en su mayoría por programadores más que por usuarios finales.
+</p><br><p>
+Base de datos relacional
+</p><br><p>
+Éste es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos dinámicamente. Tras ser postulados sus fundamentos en 1970 por Edgar Frank Codd, de los laboratorios IBM en San José (California), no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos. Su idea fundamental es el uso de "relaciones". Estas relaciones podrían considerarse en forma lógica como conjuntos de datos llamados "tuplas". Pese a que ésta es la teoría de las bases de datos relacionales creadas por Edgar Frank Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar. Esto es pensando en cada relación como si fuese una tabla que está compuesta por registros (las filas de una tabla), que representarían las tuplas, y campos (las columnas de una tabla).
+</p><br><p>
+En este modelo, el lugar y la forma en que se almacenen los datos no tienen relevancia (a diferencia de otros modelos como el jerárquico y el de red). Esto tiene la considerable ventaja de que es más fácil de entender y de utilizar para un usuario esporádico de la base de datos. Los datos pueden ser recuperados o almacenada mediante "consultas" que ofrecen una amplia flexibilidad y poder para administrar los datos.
+ </p><br><p>
+
+El lenguaje más habitual para construir las consultas a bases de datos relacionales es SQL, Structured Query Language o Lenguaje Estructurado de Consultas, un estándar implementado por los principales motores o sistemas de gestión de bases de datos relacionales.
+</p><br><p>
+Durante su diseño, una base de datos relacional pasa por un proceso al que se le conoce como normalización de una base de datos.
+</p><br><p>
+Durante los años '80 (1980-1989) la aparición de dBASE produjo una revolución en los lenguajes de programación y sistemas de administración de datos. Aunque nunca debe olvidarse que dBase no utilizaba SQL como lenguaje base para su gestión.
+</p><br><p>
+Bases de datos multidimensionales
+</p><br><p>
+Son bases de datos ideadas para desarrollar aplicaciones muy concretas, como creación de Cubos OLAP. Básicamente no se diferencian demasiado de las bases de datos relacionales (una tabla en una base de datos multidimensional podría serlo también en una base de datos multidimensional), la diferencia está más bien a nivel conceptual; en las bases de datos multidimensionales los campos o atributos de una tabla pueden ser de dos tipos, o bien representan dimensiones de la tabla, o bien representan métricas que se desean estudiar.
+</p><br><p></p><br><p></p><br><p></p><br><p>
+Bases de datos orientadas a objetos
+</p><br><p></p><br><p></p><br><p>
+Este modelo, bastante reciente, y propio de los modelos informáticos orientados a objetos, trata de almacenar en la base de datos los objetos completos (estado y comportamiento).
+</p><br><p></p><br><p>
+Una base de datos orientada a objetos es una base de datos que incorpora todos los conceptos importantes del paradigma de objetos:
+</p><br><p>
+• Encapsulación - Propiedad que permite ocultar los datos al resto de los objetos, impidiendo así accesos incorrectos o conflictos.
+</p><br><p></p><br><p></p><br><p>
+• Herencia - Propiedad a través de la cual los objetos heredan comportamiento dentro de una jerarquía de clases.
+</p><br><p></p><br><p>
+• Polimorfismo - Propiedad de una operación mediante la cual puede ser aplicada a distintos tipos de objetos.
+</p><br><p>
+En bases de datos orientadas a objetos, los usuarios pueden definir operaciones sobre los datos como parte de la definición de la base de datos. Una operación (llamada función) se especifica en dos partes. La interfaz (o signatura) de una operación incluye el nombre de la operación y los tipos de datos de sus argumentos (o parámetros). La implementación (o método) de la operación se especifica separadamente y puede modificarse sin afectar la interfaz. Los programas de aplicación de los usuarios pueden operar sobre los datos invocando a dichas operaciones a través de sus nombres y argumentos, sea cual sea la forma en la que se han implementado. Esto podría denominarse independencia entre programas y operaciones.
+</p><br><p>
+Se está trabajando en SQL3, que es el estándar de SQL92 ampliado, que soportará los nuevos conceptos orientados a objetos y mantendría compatibilidad con SQL92.
+
+
+      	</div>
+
+      	<div class="aside">
+              	<div style="text-align:center;padding:1em 0;"><a href="https://www.zeitverschiebung.net/es/city/3688689"><span style="color:gray;"><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FBogota" width="100%" height="90px" frameborder="0" seamless></iframe></span></a>
+                
+            		
+            		<a class="twitter-timeline" data-lang="es" data-width="100%" data-height="0%" data-dnt="true" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/universidadunad?lang=es">Tweets by TwitterDev</a>
+                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            			<center>	
+                			<font size="1" ><b>Eres Nuestro vistante Número</b></font>
+                			<a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=23jtutlh9n7fyqpexdrst37cxmbzsec8" border="0" title="contador de visitas gratis" alt="contador de visitas gratis"></a>
+            		 </center>
+                </div>     
+        </div>
+      <div class="footer">
+      		<p>Elaborado por: </p>
+          <p> Adalberto Cárcamo Alvarado</p>
+          <p>Ingeniería de Sistemas - CEAD-Medellín</p>
+
+      </div>
+  </div>	
+  
+</body>
+</html>
